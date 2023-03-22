@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f6f3cc5927404be88b5a6a33c61661e9" Name="Diagram1">
+        <EntityTypeShape EntityType="HospitalDBModel.Doctors" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.Genders" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.Patients" Width="1.5" PointX="6" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.Roles" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.Users" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="HospitalDBModel.FK_Doctors_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK_Doctors_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK_Patients_Genders" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK_Patients_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HospitalDBModel.HospitalDepartments" Width="1.5" PointX="3.375" PointY="7.875" />
+        <AssociationConnector Association="HospitalDBModel.FK_Doctors_Genders" />
+        <AssociationConnector Association="HospitalDBModel.FK_Doctors_HospitalDepartments" />
+        <AssociationConnector Association="HospitalDBModel.FK_Patients_Roles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
